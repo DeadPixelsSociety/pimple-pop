@@ -8,6 +8,7 @@
 #include <gf/Views.h>
 #include <gf/Window.h>
 
+#include "local/Head.h"
 
 int main() {
   static constexpr gf::Vector2u ScreenSize(1024, 576);
@@ -16,7 +17,7 @@ int main() {
 
   // initialization
 
-  gf::Window window("Cheaters", ScreenSize);
+  gf::Window window("Pimple-Pop", ScreenSize);
   gf::RenderWindow renderer(window);
 
   // views
@@ -71,7 +72,9 @@ int main() {
   // entities
 
   gf::EntityContainer mainEntities;
-  // add entities to mainEntities
+
+  ppp::Head head;
+  mainEntities.addEntity(head);
 
   gf::EntityContainer hudEntities;
   // add entities to hudEntities

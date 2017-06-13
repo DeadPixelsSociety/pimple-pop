@@ -8,6 +8,7 @@ find_package(gf REQUIRED)
 
 add_executable(pimple-pop
   src/pimple-pop.cc
+  src/local/Head.cc
    # and the rest of your sources
 )
 
